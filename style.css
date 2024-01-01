@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display';
+}
+:root {
+    --main-width: 80%;
+  }
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.text-center{
+    text-align: center;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contain{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;;
+    background-color: white;
+    box-shadow: 0 15px 15px #cdd7fa;
+}
+.head-img{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+h1{
+    width: fit-content;
+    color: #1f2b50; 
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 30px 0 15px;
+}
+.description{
+    display: inline-block;
+    width: var(--main-width);
+    font-weight: 500;
+    font-size: 13px;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 13px;
+}
+.plan{
+    width: var(--main-width);
+    padding: 15px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+a{
+    color: #493aca;
+    font-weight: 900;
+}
+.price{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.musci-icon{
+    width: 30%;
+}
+.price-plan{
+    width: 60%;
+}
+h2{
+    font-weight: 900;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: #303b52;
+}
+.price-amount{
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 5px;
+    color: hsl(224, 23%, 55%);;
+}
+.payment{
+    width: var(--main-width);
+    height: 40px;
+    margin: 20px 0;
+    background-color: #382ae1;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    box-shadow:  0 15px 15px #e0e8ff;
+}
+.cancel{
+    border: 0;
+    background: white;
+    margin-bottom: 30px;
+    color: #7f8aa2;
+    font-weight: 700;
+    font-size: 15px;
+}
+@media(max-width: 767px){
+    section{
+        background-color: #e0e8ff;
+    }
+}
+@media(min-width: 768px){
+    section{
+        background: url(images/pattern-background-desktop.svg) no-repeat top center;
+        background-color: #e0e8ff;
+
+    }
+}
